@@ -6,7 +6,7 @@ function makeButtons() {
     }).then(allWorkouts => {
         for (var i=0; i<allWorkouts.length; i++) {
             $("#button-wrapper").append(`
-                <button class="btn workoutBtn" data-toggle="modal" data-target="#exampleModalCenter" id=${allWorkouts[i]._id}>${allWorkouts[i].name}</button>
+                <button class="btn workoutBtn btn-info" data-toggle="modal" data-target="#exampleModalCenter" id=${allWorkouts[i]._id}>${allWorkouts[i].name}</button>
             `)
         };
         $(".workoutBtn").click(function(event) {
