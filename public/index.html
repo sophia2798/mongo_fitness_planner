@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="ripple-background">
+  <div class="circle xxlarge shade1"></div>
+  <div class="circle xlarge shade2"></div>
+  <div class="circle large shade3"></div>
+  <div class="circle medium shade4"></div>
+  <div class="circle small shade5"></div>
+</div>
 
 <nav class="navbar navbar-expand-lg navbar-light">
     <a class="navbar-brand" href="#">Mongo Fitness Tracker</a>
@@ -16,7 +23,7 @@
     </button>
     
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
+        <ul class="navbar-nav ml-auto">
         <li class="nav-item">
             <a class="nav-link" href="/workout">View Workouts</a>
         </li>
@@ -32,15 +39,16 @@
 
 <div class="container col-md-4 col-md-offset-4" id="main-wrapper">
   <form id="workout-form">
-    <h3 style="margin-top:1rem">Create a Workout</h3>
+    <h3 style="margin:1rem 0">Create a New Workout</h3>
     <input type="text" class="form-control" id="workout-name" name="workout-name" placeholder="Workout Name" autofocus>
-    <button class="btn btn-lg btn-primary btn-block submit" id="submit-workout">Submit</button>
+    <button class="btn btn-lg btn-info btn-block submit" id="submit-workout">Submit</button>
   </form>
 </div>
 
-<div id="button-wrapper">
-
-</div>
+<section class="content">
+  <h3>Created Workouts</h3>
+  <div id="button-wrapper"></div>
+</section>
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -77,7 +85,7 @@
                   <input type="number" class="weights" placeholder="Weight" name="weight" id="weight" style="display:none">
                   <input type="number" class="weights" placeholder="Reps" name="reps" id="reps" style="display:none">
                   <input type="number" class="weights" placeholder="Sets" name="sets" id="sets" style="display:none">
-                  <button class="btn btn-lg btn-primary btn-block submit" id="submit-exercise" style="display:none" value="">Submit</button>
+                  <button class="btn btn-lg btn-info btn-block submit" id="submit-exercise" style="display:none" value="">Submit</button>
               </form>
           </div>
           <div class="exercise-history">
