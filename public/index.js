@@ -77,14 +77,15 @@ $("#submit-exercise").click(function(event) {
     }).then(newExercise => {
         console.log(newExercise)
     })
-    $("#exercise-form1")[0].reset();
-    $("#exercise-form2")[0].reset();
-    location.reload();
+    $("#exampleModalCenter").modal("hide");
+    $("#exampleModal").modal("show");
 });
 
 
 $(document).ready(() => {
     makeButtons();
+    $("#exercise-form1")[0].reset();
+    $("#exercise-form2")[0].reset();
     $("#cardio-select").click(event => {
         event.preventDefault();
         $(".cardio").show();
