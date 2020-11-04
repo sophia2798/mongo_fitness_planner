@@ -4,6 +4,8 @@
 ## Description
 This application allows users to add workouts and then add exercises to any particular workout. When a user creates a workout, a button with that workout's name is dynamically generated and appears on the bottom of the screen. The user can then click on the button to view a modal. From the modal, the user can add either a cardio or weights exercise. The modal will also display any exercises the user has already added to that workout. The navbar includes links to view the JSON formatted database entries for the workouts, exercises, and workouts populated with exercises. 
 
+![alt-text](./assets/demo.gif)
+
 ## Table Of Contents
 - [Access and Installation](#Access-and-Installation)
 - [Usage](#Usage)
@@ -20,6 +22,7 @@ No external software or servers are necessary to install this project except for
 This project can be accessed either via the GitHub Repository.
 
 - [GitHub Repository](https://github.com/sophia2798/mongo_fitness_planner)
+- [Deployed Page](https://rocky-garden-93112.herokuapp.com/)
 
 To open and edit code files, you will need a text editor. The one used to create this page was Visual Studio Code (https://code.visualstudio.com/).
 
